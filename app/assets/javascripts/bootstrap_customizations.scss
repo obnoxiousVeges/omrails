@@ -24,12 +24,12 @@ $gray-light:                #818a91;
 $gray-lighter:              #eceeef;
 $gray-lightest:             #f7f7f9;
 
-$brand-primary:             #0275d8;
+$brand-primary:             #6FCB9F;
 $brand-success:             #5cb85c;
 $brand-info:                #5bc0de;
 $brand-warning:             #f0ad4e;
 $brand-danger:              #d9534f;
-$brand-inverse:             $gray-dark;
+$brand-inverse:             $goldenrod;
 
 
 // Options
@@ -37,7 +37,7 @@ $brand-inverse:             $gray-dark;
 // Quickly modify global styling by enabling or disabling optional features.
 
 $enable-rounded:            true;
-$enable-shadows:            false;
+$enable-shadows:            true;
 $enable-gradients:          false;
 $enable-transitions:        false;
 
@@ -46,7 +46,7 @@ $enable-transitions:        false;
 //
 // Control the default styling of most Bootstrap elements by modifying these variables.
 
-$spacer:   1rem;
+$spacer:   3rem;
 $border-width: 1px;
 
 
@@ -55,15 +55,16 @@ $border-width: 1px;
 // Settings for the `<body>` element.
 
 $body-bg:    #fff;
-$body-color: $gray-dark;
+$body-color: $maroon;
 
 
 // Links
+
 //
 // Style anchor elements.
 
 $link-color:            $brand-primary;
-$link-decoration:       none;
+$link-decoration:       none;P
 $link-hover-color:      darken($link-color, 15%);
 $link-hover-decoration: underline;
 
@@ -72,9 +73,9 @@ $link-hover-decoration: underline;
 //
 // Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-$font-family-serif:      Georgia, "Times New Roman", Times, serif;
-$font-family-base:       $font-family-sans-serif;
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Kaiti", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-serif:      Georgia, "Kaiti";
+$font-family-base:       $font-family-Kaiti;
 
 // Pixel value used to responsively scale all typography. Applied to the `<html>` element.
 $font-size-root: 16px;
