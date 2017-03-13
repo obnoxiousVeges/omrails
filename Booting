@@ -1,0 +1,8 @@
+*** SIGUSR2 not implemented, signal based restart unavailable!
+*** SIGUSR1 not implemented, signal based restart unavailable!
+*** SIGHUP not implemented, signal based logs reopening unavailable!
+Puma starting in single mode...
+* Version 3.7.1 (ruby 2.2.6-p396), codename: Snowy Sagebrush
+* Min threads: 5, max threads: 5
+* Environment: development
+! Unable to load application: NameError: undefined local variable or method `config_app_generators' for Omrails::Application:Class

@@ -1,7 +1,8 @@
 
 
 source 'https://rubygems.org'
-ruby "2.2.6"
+ruby '2.2.6'
+
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -16,14 +17,14 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
 
+
 gem 'jquery-ui-rails', '~> 5.0.5'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'devise'
 gem 'activeadmin', '~> 1.0.0.pre5'
-gem 'inherited_resources', git: 'https://github.com/activeadmin/inherited_resources'
-
+gem 'inherited_resources', github: 'activeadmin/inherited_resources'
 group :development, :test do
   gem 'byebug', platform: :mri
    gem 'sqlite3'
