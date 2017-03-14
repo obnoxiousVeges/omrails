@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :submissions
   resources :tweets
   ActiveAdmin.routes(self)
 	devise_for :users 
@@ -8,8 +9,9 @@ Rails.application.routes.draw do
 		delete "signout" => 'devise/sessions#destroy'
 		get 'signup' => 'devise/registrations#new'
 	end 
-  root 'pages#home'
-  get 'about' => 'pages#about'
+
+
+root 'pages#about'
   get 'contact' => 'pages#contact'
   
 
