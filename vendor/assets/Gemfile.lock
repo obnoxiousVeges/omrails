@@ -1,0 +1,44 @@
+       GIT
+       remote: https://github.com/activeadmin/inherited_resources.git
+  revision: eea3aa21f3867dc182e4db24d1c765bdbcb3df34
+  specs:
+    inherited_resources (1.7.0)
+      actionpack (>= 3.2, < 5.1)
+      has_scope (~> 0.6)
+      railties (>= 3.2, < 5.1)
+      responders
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    actioncable (5.0.2)
+      actionpack (= 5.0.2)
+      nio4r (>= 1.2, < 3.0)
+      websocket-driver (~> 0.6.1)
+    actionmailer (5.0.2)
+      actionpack (= 5.0.2)
+      actionview (= 5.0.2)
+      activejob (= 5.0.2)
+      mail (~> 2.5, >= 2.5.4)
+      rails-dom-testing (~> 2.0)
+    actionpack (5.0.2)
+      actionview (= 5.0.2)
+      activesupport (= 5.0.2)
+      rack (~> 2.0)
+      rack-test (~> 0.6.3)
+      rails-dom-testing (~> 2.0)
+      rails-html-sanitizer (~> 1.0, >= 1.0.2)
+    actionview (5.0.2)
+      activesupport (= 5.0.2)
+      builder (~> 3.1)
+      erubis (~> 2.7.0)
+      rails-dom-testing (~> 2.0)
+      rails-html-sanitizer (~> 1.0, >= 1.0.3)
+    activeadmin (1.0.0.pre5)
+      arbre (~> 1.0, >= 1.0.2)
+      bourbon
+      coffee-rails
+      formtastic (~> 3.1)
+      formtastic_i18n
+      inherited_resources (~> 1.6)
+      jquery-rails
