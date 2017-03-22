@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170314075749) do
+ActiveRecord::Schema.define(version: 20170322004002) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string   "namespace"
@@ -26,6 +26,25 @@ ActiveRecord::Schema.define(version: 20170314075749) do
     t.index ["resource_type", "resource_id"], name: "index_active_admin_comments_on_resource_type_and_resource_id"
   end
 
+  create_table "items", force: :cascade do |t|
+    t.integer  "user_id"
+    t.string   "title"
+    t.string   "url"
+    t.text     "text"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_items_on_user_id"
+  end
+
+  create_table "jokers", force: :cascade do |t|
+    t.integer  "user_id"
+    t.string   "title"
+    t.text     "messages"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_jokers_on_user_id"
+  end
+
   create_table "submissions", force: :cascade do |t|
     t.string   "title"
     t.string   "url"
@@ -37,8 +56,12 @@ ActiveRecord::Schema.define(version: 20170314075749) do
   create_table "tweets", force: :cascade do |t|
     t.integer  "user_id"
     t.text     "content"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
     t.index ["user_id"], name: "index_tweets_on_user_id"
   end
 

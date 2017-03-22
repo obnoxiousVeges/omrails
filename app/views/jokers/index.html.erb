@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Jokers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Title</th>
+      <th>Messages</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @jokers.each do |joker| %>
+      <tr>
+        <td><%= joker.user %></td>
+        <td><%= joker.title %></td>
+        <td><%= joker.messages %></td>
+        <td><%= link_to 'Show', joker %></td>
+        <td><%= link_to 'Edit', edit_joker_path(joker) %></td>
+        <td><%= link_to 'Destroy', joker, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Joker', new_joker_path %>
